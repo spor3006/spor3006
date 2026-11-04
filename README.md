@@ -1,18 +1,14 @@
-### Hi, I'm Sparshal 👋
+Backend engineer at Meesho in Bangalore. I work on the logistics side. I own the service that orchestrates shipments (around 15M a day), and over the last couple of years I moved a ~40TB order database from RDS to MongoDB without downtime and built a new pickup-point delivery service from scratch in Go.
 
-Senior Backend Engineer (SDE III) at **Meesho**, Bangalore. I build event-driven distributed systems at scale.
+Lately I've been building internal tools on Claude Code and MCP, mostly for on-call debugging and for giving engineers safe access to staging databases.
 
-- 🚚 Primary owner of shipment orchestration at **15M shipments/day**, ~500M events/day, 99.99% availability
-- 🏗️ Led the 0-to-1 build of Self-Pickup. I built its **Go** service from scratch
-- 🗄️ Led a zero-downtime **~40TB** RDS → MongoDB migration (CDC + dual-writes)
-- 🤖 Build AI engineering tools with **Claude Code + MCP** (an on-call agent, and a DB MCP server used by 200+ engineers)
-- 🔒 Most of my day-to-day work is in private company repos (1,300+ contributions in the past year), so my public graph is sparse
+Nearly all of that is in private company repos, so there isn't much to see here. The public bits:
 
-**Open source**
-- ✅ Merged: [prometheus/client_golang#2005](https://github.com/prometheus/client_golang/pull/2005): promhttp no longer panics with non-exemplar observers
-- 🔄 In review: client_golang#2006 · langchainjs#10935 · mem0#5177
-- 🛠️ Contributed fixes: openai-java, anthropic-sdk-go, langchain4j
+- [prometheus/client_golang#2005](https://github.com/prometheus/client_golang/pull/2005) (merged): promhttp panicked when instrumenting with observers that don't support exemplars
+- [prometheus/client_golang#2006](https://github.com/prometheus/client_golang/pull/2006): opt-in to skip help-text validation in the registry
+- [langchainjs#10935](https://github.com/langchain-ai/langchainjs/pull/10935): unhandled promise rejection on tool-call output
+- [mem0#5177](https://github.com/mem0ai/mem0/pull/5177): truncate long conversations before embedding instead of crashing at 8192 tokens
 
-**Stack:** Java · Spring Boot · Go · Kafka · ScyllaDB · MongoDB · Redis · PostgreSQL · Kubernetes · AWS · GCP
+I mostly write Java and Go, on Kafka, ScyllaDB and MongoDB.
 
-📫 [LinkedIn](https://www.linkedin.com/in/sparshal-kothari) · sparshalkothari2014@gmail.com
+[LinkedIn](https://www.linkedin.com/in/sparshal-kothari)
